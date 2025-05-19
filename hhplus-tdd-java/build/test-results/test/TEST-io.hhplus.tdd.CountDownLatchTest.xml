@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.hhplus.tdd.CountDownLatchTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-05-19T08:59:54" hostname="YBSHON" time="2.983">
+  <properties/>
+  <testcase name="비동기 테스트" classname="io.hhplus.tdd.CountDownLatchTest" time="2.983"/>
+  <system-out><![CDATA[17:59:49.369 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [io.hhplus.tdd.CountDownLatchTest]: CountDownLatchTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:59:49.748 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration io.hhplus.tdd.TddApplication for test class io.hhplus.tdd.CountDownLatchTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2025-05-19T17:59:51.160+09:00  INFO 18772 --- [hhplus-tdd] [    Test worker] io.hhplus.tdd.CountDownLatchTest         : Starting CountDownLatchTest using Java 17.0.15 with PID 18772 (started by user in C:\ww\hhplus-tdd-java)
+2025-05-19T17:59:51.164+09:00  INFO 18772 --- [hhplus-tdd] [    Test worker] io.hhplus.tdd.CountDownLatchTest         : No active profile set, falling back to 1 default profile: "default"
+2025-05-19T17:59:54.040+09:00  INFO 18772 --- [hhplus-tdd] [    Test worker] io.hhplus.tdd.CountDownLatchTest         : Started CountDownLatchTest in 3.762 seconds (process running for 7.226)
+2025-05-19T17:59:56.055+09:00  INFO 18772 --- [hhplus-tdd] [       Thread-5] io.hhplus.tdd.point.PointService         : [충전 시도 - 136] - 잔액: 0원 / 충전 10000원
+2025-05-19T17:59:56.064+09:00  INFO 18772 --- [hhplus-tdd] [       Thread-5] io.hhplus.tdd.point.PointService         : [충전 완료 - 136] - 잔액: 10000원
+2025-05-19T17:59:56.180+09:00  INFO 18772 --- [hhplus-tdd] [       Thread-6] io.hhplus.tdd.point.PointService         : [차감 시도 - 136] - 잔액: 10000원 / 차감 7000원
+2025-05-19T17:59:56.239+09:00  INFO 18772 --- [hhplus-tdd] [       Thread-6] io.hhplus.tdd.point.PointService         : [차감 완료 - 136] - 잔액: 3000원
+2025-05-19T17:59:56.515+09:00  INFO 18772 --- [hhplus-tdd] [    Test worker] io.hhplus.tdd.point.PointService         : [충전 시도 - 136] - 잔액: 3000원 / 충전 8000원
+2025-05-19T17:59:56.643+09:00  INFO 18772 --- [hhplus-tdd] [    Test worker] io.hhplus.tdd.point.PointService         : [충전 완료 - 136] - 잔액: 11000원
+2025-05-19T17:59:56.889+09:00  INFO 18772 --- [hhplus-tdd] [    Test worker] io.hhplus.tdd.point.PointService         : [차감 시도 - 136] - 잔액: 11000원 / 차감 5000원
+2025-05-19T17:59:56.930+09:00  INFO 18772 --- [hhplus-tdd] [    Test worker] io.hhplus.tdd.point.PointService         : [차감 완료 - 136] - 잔액: 6000원
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
